@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image:url("https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/images/panoramic/getty_485008244_105123.jpg");
+  color:white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a.active {
+    background-color:navy;
+    color:white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  text-align:center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.cards {
+    display:flex;
+    margin-bottom:2%;
+}
+
+.vid {
+    display:flex;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Projects</h1>
+</div>
+
+<div class="navbar">
+    <a href ="index.html">Home</a>
+    <a href="prjcts.html" class="active">Projects</a>
+    <a href="academ.html">Academics</a>
+    <a href="hobbs.html">Sports</a>
+    <a href="abtme.html" class="right">About Me</a>
+</div>
+
+<div class="row">
+  
+      <div style="margin-left:auto;margin-right:auto;" class="vid">
+    <div style="margin-right:0.5%"><video width="540" height="360" controls>
+  <source src="https://codehs.com/uploads/50db84f3fef420fad4b28d7d78768839">
+</video></div><br>
+
+    <div style="margin-right:0.5%"><video width="540" height="360" controls>
+  <source src="https://codehs.com/uploads/b3ed05f868e5863f60e95fc9bdcfcb91">
+</video></div>    
+    </div>
+    
+    <div style="margin-left:auto;margin-right:auto" class="vid">
+        <div style="margin-right:0.5%"><video width="540" height="360" controls>
+  <source src="https://codehs.com/uploads/da099128792b3b8f574c6765098849c4">
+</video></div>
+
+        <div style="margin-right:0.5%"><video width="540" height="360" controls>
+  <source src="https://codehs.com/uploads/da58e96204348841bb0c6630331d4cd1">
+</video></div>
+        
+    
+  </div>
+  <div class="main" style="text-align:center">
+    <h2>Projects</h2>
+    <h5>August 2025 - May 2026</h5>
+    <div style="margin-left:13%">
+    <div class="cards">
+        <div style="margin-right:5%" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIEKy6y3lULpkEQmffQKqmPffJnQxl8O2RIg&s" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-art-project-LcLlsd"><h4><b>Art Project</b></h4></a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://cdn.dribbble.com/userupload/11522098/file/original-837b8122a436a1db38f6a5d151529a10.jpg?resize=752x&vertical=center" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-atm-machine-J3ugsf"><h4><b>ATM Machine</b></h4></a>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        
+        <div style="margin-right:5%" class="card">
+            <img src="https://thumbs.dreamstime.com/b/cartoon-race-track-top-view-curves-finish-line-flat-design-191145231.jpg" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/turtle-shape-race-ozAooY"><h4><b>Turtle Shape Race</b></h4></a>
+            
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/053/092/580/non_2x/pixel-art-rocket-launch-game-asset-design-vector.jpg" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-pixel-art-project-1PwZTC"><h4><b>Pixel Art</b></h4></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div style="margin-right:5%" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITJ8ZSChocskJx9yrJ72VbNLz2eSwEBG9jw&s" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-python-clock-egBCor"><h4><b>Python Clock</b></h4></a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWifgmveeJNKE1evLpbMIE99sQ_zPfMg9AmA&s" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-wheel-of-names-0fLHyR"><h4><b>Wheel of Names</b></h4></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div style="margin-right:5%" class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/046/804/426/non_2x/google-classroom-icon-logo-symbol-free-png.png" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-google-classroom-yWhp7b"><h4><b>Google Classroom</b></h4></a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjOwKeC-NdLq4eBf0kzCAIcszuV714eFAcsg&s" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-art-store-expanded-APQKGu"><h4><b>Art Store</b></h4></a>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div style="margin-right:5%" class="card">
+            <img src="https://cdn.vectorstock.com/i/1000v/42/36/cartoon-office-building-vector-50904236.jpg" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-office-website-GdBVLM"><h4><b>Office Website</b></h4></a>
+            
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://www.shutterstock.com/image-vector/row-metal-school-lockers-ventilation-600nw-2498588815.jpg" alt="Avatar" style="width:90%">
+            <div class="container">
+            <a href="https://codehs.com/sandbox/id/ecs-presentation-WoK9ki"><h4><b>Virtual Locker</b></h4></a>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <img src="https://expressionengine.com/asset/img/add-on-icons/randomizer.png" width="90%">
+            <div class="container">
+                <a href="https://codehs.com/sandbox/id/rrb-improved3-bxccly"><h4>RRB</h4></a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/026/587/051/non_2x/student-calculator-clipart-simple-calculator-with-math-operations-buttons-flat-illustration-cartoon-style-hand-drawn-doodle-students-classroom-school-supplies-back-to-school-concept-vector.jpg" width="90%">
+            <div class="container">
+                <a href="https://codehs.com/sandbox/id/gpa-calculator-TghW6a"><h4>GPA Calculator</h4></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+  <h2><em>Jorja Buenaflor</em></h2>
+</div>
+
+</body>
+</html>
